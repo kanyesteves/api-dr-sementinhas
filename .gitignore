@@ -12,6 +12,7 @@ __pycache__/
 
 # Customize
 api-sementinha/
+utils/connDB.py
 
 # Distribution / packaging
 .Python

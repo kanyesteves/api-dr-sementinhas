@@ -13,7 +13,15 @@ def create_app():
     )
 
     from routes import collaboratorRouter
+    from routes import userRouter
+    from routes import groupRouter
+    from routes import priorityRouter
+    from routes import eventRouter
 
     app.include_router(collaboratorRouter.router)
+    app.include_router(userRouter.router)
+    app.include_router(groupRouter.router)
+    app.include_router(priorityRouter.router)
+    app.include_router(eventRouter.router)
 
     return app
