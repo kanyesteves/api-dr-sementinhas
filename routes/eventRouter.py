@@ -20,9 +20,11 @@ def getEventById():
 def createEvent():
     print('createEvent')
 
+
 @router.put('/update/{event_id}', status_code=HTTPStatus.OK)
 def updateEvent():
     print('updateEvent')
+
 
 @router.delete('/remove/{event_id}', status_code=HTTPStatus.OK)
 def deleteEvent():

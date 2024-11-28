@@ -20,9 +20,11 @@ def getUserById():
 def createUser():
     print('createUser')
 
+
 @router.put('/update/{user_id}', status_code=HTTPStatus.OK)
 def updateUser():
     print('updateUser')
+
 
 @router.delete('/remove/{user_id}', status_code=HTTPStatus.OK)
 def deleteUser():

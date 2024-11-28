@@ -20,9 +20,11 @@ def getPriorityById():
 def createPriority():
     print('createPriority')
 
+
 @router.put('/update/{priority_id}', status_code=HTTPStatus.OK)
 def updatePriority():
     print('updatePriority')
+
 
 @router.delete('/remove/{priority_id}', status_code=HTTPStatus.OK)
 def deletePriority():

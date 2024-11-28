@@ -20,9 +20,11 @@ def getGroupById():
 def createGroup():
     print('createGroup')
 
+
 @router.put('/update/{group_id}', status_code=HTTPStatus.OK)
 def updateGroup():
     print('updateGroup')
+
 
 @router.delete('/remove/{group_id}', status_code=HTTPStatus.OK)
 def deleteGroup():

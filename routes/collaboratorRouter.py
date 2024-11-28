@@ -20,9 +20,11 @@ def getCollaboratorById():
 def createCollaborator():
     print('createCollaborator')
 
+
 @router.put('/update/{collaborator_id}', status_code=HTTPStatus.OK)
 def updateCollaborator():
     print('updateCollaborator')
+
 
 @router.delete('/remove/{collaborator_id}', status_code=HTTPStatus.OK)
 def deleteCollaborator():
