@@ -12,13 +12,15 @@ def create_app():
         allow_headers=['*'],
     )
 
-    from routes import collaboratorRouter
+    from routes import functionRouter
+    from routes import presenceRouter
     from routes import userRouter
     from routes import groupRouter
     from routes import priorityRouter
     from routes import eventRouter
 
-    app.include_router(collaboratorRouter.router)
+    app.include_router(functionRouter.router)
+    app.include_router(presenceRouter.router)
     app.include_router(userRouter.router)
     app.include_router(groupRouter.router)
     app.include_router(priorityRouter.router)
